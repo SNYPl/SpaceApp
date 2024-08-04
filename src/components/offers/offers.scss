@@ -1,0 +1,63 @@
+.offer {
+  &--title {
+    color: var(--white-color);
+    font-family: latoExtraBold;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  &--paragraph {
+    font-size: 16px;
+    line-height: 19.2px;
+    font-family: latoExtraBold;
+    color: var(--white-color);
+  }
+
+  &--button {
+    border: 1px solid var(--yellow-color);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .offer {
+    &--title {
+      text-align: left;
+      font-size: 48px;
+      line-height: 48px;
+      width: 60%;
+      align-self: flex-start;
+      max-width: 435px;
+    }
+
+    &--paragraph {
+      text-align: left;
+      width: 100%;
+      align-self: flex-start;
+      font-size: 22px;
+      line-height: 26px;
+    }
+
+    &--button {
+      align-self: flex-start;
+      width: 191px;
+      height: 54px;
+      font-size: 22px;
+      line-height: 26px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1248px) {
+  .offer {
+    &--title {
+      font-size: 72px;
+      line-height: 72px;
+      max-width: 700px;
+    }
+
+    &--paragraph {
+      font-size: 32px;
+      line-height: 38.4px;
+    }
+  }
+}

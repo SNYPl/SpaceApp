@@ -1,6 +1,24 @@
+
+body,
+html {
+  overflow: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: latoBold;
+  src: url("./asset/fonts/Lato-Bold.ttf");
+}
+
+@font-face {
+  font-family: latoExtraBold;
+  src: url("./asset/fonts/Lato-Black.ttf");
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+  font-family: latoBold, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -14,5 +32,6 @@ body {
   --black-color:#000000;
   --bg--linear-color:background: linear-gradient(196.2deg, #0D1E48 0%, #304571 100%);
   --blue-color:#304571;
-
+  --link-hover: linear-gradient(98.25deg, #EBFF00 18.56%, #FF70D9 76.02%);
 }
+

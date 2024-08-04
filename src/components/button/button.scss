@@ -1,0 +1,30 @@
+.custom-button {
+  width: 161px;
+  height: 33px;
+  font-family: latoBold;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  outline: none;
+  border-radius: 100px;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 60%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+}
+
+@media only screen and (min-width: 1248px) {
+  .custom-button {
+    width: 191px;
+    height: 54px;
+    font-size: 22px;
+    line-height: 26px;
+  }
+}
