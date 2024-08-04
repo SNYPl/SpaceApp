@@ -1,5 +1,6 @@
 .offers {
   padding: 50px 6.5%;
+  position: relative;
 
   &--title {
     margin-bottom: 30px;
@@ -33,7 +34,14 @@
       grid-template-columns: 1fr 1fr;
       gap: 40px;
 
-      :nth-child(1) {
+      article:nth-child(1) {
+        background-image: url("../../asset/images/offers/first-offer1.png") !important;
+      }
+      article:nth-child(4) {
+        background-image: url("../../asset/images/offers/bottom-offer1.png") !important;
+      }
+
+      article:nth-child(1) {
         grid-column-start: 1;
         grid-column-end: 3;
 
@@ -49,7 +57,7 @@
         }
       }
 
-      :nth-child(4) {
+      article:nth-child(4) {
         grid-column-start: 1;
         grid-column-end: 3;
 
