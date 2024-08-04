@@ -5,6 +5,12 @@
   background-color: var(--black-color);
   z-index: 1;
 
+  &--logo--link {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
+
   &--logo {
     object-fit: contain;
     cursor: pointer;
@@ -14,10 +20,16 @@
     display: flex;
     align-items: center;
   }
-}
 
-.nav {
-  display: none;
+  .nav {
+    display: none;
+
+    .active {
+      background: var(--link-hover);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -26,51 +38,60 @@
     &--menu--image {
       display: none;
     }
-  }
 
-  .nav {
-    display: flex;
-    align-items: center;
-
-    &--list {
+    .nav {
       display: flex;
       align-items: center;
-      column-gap: 30px;
 
-      &--item {
-        color: var(--white-color);
+      &--list {
+        display: flex;
+        align-items: center;
+        column-gap: 30px;
 
-        a {
+        &--item {
           color: var(--white-color);
-          font-size: 18px;
-          line-height: 21px;
-          font-family: latoBold;
-          padding: 0 14px;
 
-          &:hover {
-            background: var(--link-hover);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+          a {
+            color: var(--white-color);
+            font-size: 18px;
+            line-height: 21px;
+            font-family: latoBold;
+            padding: 0 14px;
+
+            &:hover {
+              background: var(--link-hover);
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+            }
           }
         }
       }
-    }
 
-    .cart--default {
-      opacity: 1;
-    }
+      &--cart {
+        max-width: 25px;
+        max-height: 20px;
 
-    .cart--hovered {
-      display: none;
-    }
+        a {
+          padding: 0;
+        }
+      }
 
-    &--cart:hover {
       .cart--default {
-        display: none;
+        opacity: 1;
       }
 
       .cart--hovered {
-        display: flex;
+        display: none;
+      }
+
+      &--cart:hover {
+        .cart--default {
+          display: none;
+        }
+
+        .cart--hovered {
+          display: flex;
+        }
       }
     }
   }

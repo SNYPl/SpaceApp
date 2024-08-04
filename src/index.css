@@ -1,12 +1,20 @@
 
 body,
 html {
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 * {
   box-sizing: border-box;
+  transition: all 0.2s ease;
 }
+
+.component--style {
+  padding:100px;
+  color:#fff;
+  font-size: 30px;
+}
+
 @font-face {
   font-family: latoBold;
   src: url("./asset/fonts/Lato-Bold.ttf");
@@ -23,6 +31,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.main {
+  background: linear-gradient(180.96deg, #0d1e48 -0.67%, #304571 100.39%);
+
 }
 
 :root {

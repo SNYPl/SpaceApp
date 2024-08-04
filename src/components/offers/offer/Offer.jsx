@@ -1,16 +1,12 @@
 import React from "react";
-import "./offers.scss";
+import "./offer.scss";
+import Button from "../../button/Button";
 
-const Offer = () => {
+const Offer = ({ title, paragraph, image }) => {
   return (
-    <article className="offer">
-      <img src="" alt="offer" />
-      <h2 className="offer--title">
-        Discover the vast expanses of <span>space</span>
-      </h2>
-      <p className="offer--paragraph">
-        Where the possibilities are <span>endless</span>!
-      </p>
+    <article className="offer" style={{ backgroundImage: `url(${image})` }}>
+      <h2 className="offer--title">{title}</h2>
+      <p className="offer--paragraph">{paragraph}</p>
       <Button className="offer--button">Learn more</Button>
     </article>
   );

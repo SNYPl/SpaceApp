@@ -1,63 +1,69 @@
-.offer {
+.offers {
+  padding: 50px 6.5%;
+
   &--title {
-    color: var(--white-color);
+    margin-bottom: 30px;
     font-family: latoExtraBold;
-    font-size: 36px;
-    line-height: 36px;
-  }
-
-  &--paragraph {
-    font-size: 16px;
-    line-height: 19.2px;
-    font-family: latoExtraBold;
+    font-size: 18px;
+    line-height: 21.6px;
     color: var(--white-color);
   }
 
-  &--button {
-    border: 1px solid var(--yellow-color);
+  &--container {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 30px;
   }
 }
 
 @media only screen and (min-width: 768px) {
-  .offer {
-    &--title {
-      text-align: left;
-      font-size: 48px;
-      line-height: 48px;
-      width: 60%;
-      align-self: flex-start;
-      max-width: 435px;
-    }
-
-    &--paragraph {
-      text-align: left;
-      width: 100%;
-      align-self: flex-start;
-      font-size: 22px;
-      line-height: 26px;
-    }
-
-    &--button {
-      align-self: flex-start;
-      width: 191px;
-      height: 54px;
-      font-size: 22px;
-      line-height: 26px;
+  .offers {
+    &--container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
     }
   }
 }
 
 @media only screen and (min-width: 1248px) {
-  .offer {
-    &--title {
-      font-size: 72px;
-      line-height: 72px;
-      max-width: 700px;
-    }
+  .offers {
+    &--container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
 
-    &--paragraph {
-      font-size: 32px;
-      line-height: 38.4px;
+      :nth-child(1) {
+        grid-column-start: 1;
+        grid-column-end: 3;
+
+        h2 {
+          font-size: 74px;
+          line-height: 74px;
+          max-width: 665px;
+          padding-top: 0;
+        }
+        p {
+          font-size: 26px;
+          line-height: 31.4px;
+        }
+      }
+
+      :nth-child(4) {
+        grid-column-start: 1;
+        grid-column-end: 3;
+
+        h2 {
+          font-size: 74px;
+          line-height: 74px;
+          max-width: 665px;
+          padding-top: 0;
+        }
+        p {
+          font-size: 26px;
+          line-height: 31.4px;
+        }
+      }
     }
   }
 }

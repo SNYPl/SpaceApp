@@ -6,8 +6,19 @@ import Offer from "./offer/Offer";
 const Offers = () => {
   return (
     <section className="offers">
-      <h2>Offers</h2>
-      <Offer />
+      <h2 className="offers--title">Offers</h2>
+      <div className="offers--container">
+        {offers.map((offer, id) => {
+          return (
+            <Offer
+              title={offer.title}
+              paragraph={offer.paragraph}
+              image={offer.background}
+              key={id}
+            />
+          );
+        })}
+      </div>
     </section>
   );
 };

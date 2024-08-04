@@ -1,0 +1,95 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  padding: 0 6.5%;
+  padding-bottom: 50px;
+
+  &--title {
+    font-family: latoExtraBold;
+    font-size: 18px;
+    line-height: 21.6px;
+    color: var(--white-color);
+  }
+
+  &--info {
+    font-family: latoBold;
+    font-size: 14px;
+    line-height: 16.8px;
+    color: var(--white-color);
+    opacity: 60%;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &--info--more {
+    display: flex;
+  }
+
+  &--link {
+    color: var(--yellow-color);
+    font-size: 14px;
+    line-height: 16.8px;
+    font-family: latoExtraBold;
+    width: 100%;
+    max-width: 100px;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 60%;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .about {
+    row-gap: 13px;
+    padding: 0 6.5%;
+    padding-bottom: 53px;
+    padding-top: 5px;
+
+    &--title {
+      font-size: 24px;
+      line-height: 28.8px;
+    }
+
+    &--info {
+      font-size: 16px;
+      line-height: 19.2px;
+      margin-bottom: 7px;
+    }
+
+    &--link {
+      font-size: 16px;
+      line-height: 19.2px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1248px) {
+  .about {
+    row-gap: 17px;
+    padding: 0 6.5%;
+    padding-bottom: 60px;
+    padding-top: 12px;
+
+    &--title {
+      font-size: 32px;
+      line-height: 38.4px;
+    }
+
+    &--info {
+      font-size: 20px;
+      line-height: 24px;
+      margin-bottom: 0;
+    }
+
+    &--link {
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+}

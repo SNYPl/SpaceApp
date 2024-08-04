@@ -1,0 +1,22 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--black-color);
+  padding: 19px 6.5%;
+  padding-top: 0;
+
+  &--image {
+    svg {
+      object-fit: contain;
+    }
+  }
+
+  &--title {
+    font-family: latoExtraBold;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--yellow-color);
+  }
+}
