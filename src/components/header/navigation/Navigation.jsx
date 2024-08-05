@@ -1,13 +1,10 @@
 import React, { useState } from "react";
 import "./navigation.scss";
 import logo from "../../../asset/images/header/LOGO.svg";
-import {
-  BurgerMenuSvg,
-  CartSvg,
-  HoveredCart,
-} from "../../../common/svg/header";
+import { BurgerMenuSvg, CartSvg } from "../../../common/svg/header";
 import { Link, NavLink } from "react-router-dom";
 import BurgeerMenu from "./burgerMenu/BurgerMenu";
+import hoveredCartImg from "../../../asset/images/header/hovered-cart.svg";
 
 const Navigation = () => {
   const [burgerMenu, setBurgerMenu] = useState(false);
@@ -47,7 +44,11 @@ const Navigation = () => {
             <li className="nav--list--item nav--cart">
               <NavLink to="/cart">
                 <CartSvg className="cart--default" />
-                <HoveredCart className="cart--hovered" />
+                <img
+                  src={hoveredCartImg}
+                  alt="cart"
+                  className="cart--hovered"
+                />
               </NavLink>
             </li>
           </ul>

@@ -1,8 +1,9 @@
 import React from "react";
 import "./burgerMenu.scss";
-import { CartSvg, HoveredCart, CloseSvg } from "../../../../common/svg/header";
+import { CartSvg, CloseSvg } from "../../../../common/svg/header";
 import logo from "../../../../asset/images/header/LOGO.svg";
 import { Link, NavLink } from "react-router-dom";
+import hoveredCartImg from "../../../../asset/images/header/hovered-cart.svg";
 
 const BurgerMenu = ({ burgerMenu, burgerMenuHandler }) => {
   return (
@@ -33,7 +34,11 @@ const BurgerMenu = ({ burgerMenu, burgerMenuHandler }) => {
               <li className="nav--list--item nav--cart">
                 <NavLink to="/cart">
                   <CartSvg className="cart--default" />
-                  <HoveredCart className="cart--hovered" />
+                  <img
+                    src={hoveredCartImg}
+                    alt="cart"
+                    className="cart--hovered"
+                  />
                 </NavLink>
               </li>
             </ul>
